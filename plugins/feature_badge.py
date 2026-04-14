@@ -7,7 +7,7 @@ class FeatureBadgePlugin:
         badge = page.metadata.get("badge") or ("Featured" if featured else "")
         page.extra["feature_badge"] = badge
         page.extra["feature_class"] = "page--featured" if featured else ""
-        page.extra["tag_list"] = ", ".join(str(tag) for tag in page.metadata.get("tags", []))
+        page.extra["feature_badge"] = ", ".join(str(tag) for tag in page.metadata.get("tags", []))
         return page
 
 
