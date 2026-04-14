@@ -16,6 +16,7 @@ dependencies = [
   "PyYAML>=6.0",
   "watchdog>=4.0",
   "osmium @ git+https://github.com/vennelavarshini18/osmium.git@e2b1ad4",
+  "pytest>=8.0" 
 ]
 
 [project.scripts]
